@@ -1,0 +1,82 @@
+.hero-bg{
+	background: #ffff00;
+	border-radius: 20px;
+}
+.why-web-imp{
+	background-color: #000;
+	color: #fff;
+	padding: 30px 25px;
+	border-radius: 15px;
+}
+.feature li{
+	font-weight: bold;
+	list-style: none;
+	line-height: 30px;
+	margin-left: 	0px;
+}
+.feature li svg{
+	font-size: 25px;
+}
+.tech-used svg{
+	font-size: 100px;
+	background-color: #000;
+	color: #ffff00;
+	padding:10px;
+	border-radius: 15px
+}
+
+.tech-used.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+.tech-used.flex-container > div {
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 20px;
+}
+.how-i-work{
+	border-left: 2px solid #000;
+	padding-bottom: 20px
+}
+.how-i-work .counting{
+	width: 30px;
+	height: 30px;
+	text-align:center;
+	display: block;
+	background: #ffff00;
+	padding: 5px;
+	border: 2px solid #000;
+	border-radius: 5px;
+	margin-left:-30px;
+	font-size: 20px;
+	line-height: 15px;
+	font-weight:bold;
+}	
+
+.home-cta .flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+.home-cta a:hover{
+	text-decoration:none;
+}
+.home-cta .flex-container div {
+  background-color: #000;
+  color: #fff;
+  font-size:35px;
+  padding:20px 50px;
+  border-radius: 15px;
+  transition: 0.5s;
+}
+.home-cta .flex-container div:hover{
+	background-color: #ffff00;
+	color: #000;
+}

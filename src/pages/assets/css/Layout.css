@@ -1,0 +1,133 @@
+.topnav {
+  overflow: hidden;
+  background-color: rgba(220, 220, 220, 0.5);
+  position:fixed;
+  width:90%;
+  left:5%;
+  top:10px;
+  -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+    border-radius: 15px;
+    text-align:center;
+	z-index:999;
+}
+
+.topnav a {
+  display: inline-block;
+  color: #000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  position:relative;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.topnav a:after {
+        position: absolute;
+        content: '';
+        height: 2px;
+		  /* adjust this to move up and down. you may have to adjust the line height of the paragraph if you move it down a lot. */
+        bottom: 10px; 
+
+
+       /****** 
+       optional values below 
+       ******/
+        
+        /* center - (optional) use with adjusting width   */
+        margin: 0 auto;
+		  left: 0;
+        right: 0;
+		  width: 0%;
+		  background: #fff;
+		  
+		  /* optional animation */
+		  -o-transition:.5s;
+  		  -ms-transition:.5s;
+        -moz-transition:.5s;
+        -webkit-transition:.5s;
+        transition:.5s;
+    }
+	 
+
+	 /* optional hover classes used with anmiation */
+	  .topnav a:hover:after {
+		  width: 80%;
+		  background: #F4B400;
+    }
+
+.topnav a.active {
+  color: orange;
+}
+
+.topnav .icon {
+  display: none;
+}
+.topnav a:first-child {display: none;}
+@media screen and (max-width: 600px) {
+	.topnav a:first-child {display: inline-block;}
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: fixed;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+}
+
+.ctoa{
+	background:yellow;
+    margin:20px;
+	margin-top:50px;
+    border-radius:15px
+}
+.y-btn{
+	background-color: #000;
+	color: #fff;
+	padding: 6px 16px;
+	border: 2px solid #ffff00;
+	border-radius: 12px;
+	text-decoration:none;
+	transition: 0.5s;
+}
+.y-btn:hover{
+	text-decoration:none;
+	background-color: #ffff00;
+	color: #000;
+	border: 2px solid #000;
+}
+.bg-y{
+	background: #ffff00;
+	padding: 2px 10px;
+	border-radius: 12px;
+}
+#top{
+	padding:35px;
+}
+
+.icon_pulse {
+    animation: circle 1.2s steps(8) infinite;
+}
+
+@keyframes circle {
+    from {
+        transform: rotate(90deg);
+    }
+
+    to {
+        transform: rotate(450deg);
+    }
+}
